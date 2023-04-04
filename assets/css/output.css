@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+main, section, form, body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  margin: 5rem 3rem 2rem;
+  gap: 2rem;
+  text-align: center;
+}
+
+section {
+  gap: 1rem;
+}
+
+h1 {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+
+span {
+  color: hsl(209, 33%, 12%);
+  font-weight: 700;
+}
+
+p {
+  color: hsl(209, 33%, 12%);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+form {
+  width: 100%;
+  margin: 1rem 0 2rem;
+  gap: 0.5rem;
+}
+
+input {
+  min-width: 18rem;
+  padding: 0.7rem 2rem;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 2rem;
+}
+input:invalid {
+  border-color: hsl(354, 100%, 66%);
+}
+input:invalid + .error {
+  display: block;
+}
+
+::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+
+button {
+  width: 18rem;
+  padding: 0.7rem;
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 10px 10px -5px hsl(223, 100%, 88%);
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(223, 100%, 88%);
+}
+
+.error {
+  display: none;
+  margin: 0.4rem 0 1rem;
+  font-size: 0.7rem;
+  color: hsl(354, 100%, 66%);
+}
+
+img {
+  width: 100%;
+}
+
+.social-media {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  color: hsl(223, 87%, 63%);
+}
+.social-media i {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+}
+.social-media i:hover {
+  cursor: pointer;
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  color: hsl(0, 0%, 59%);
+}
+
+a {
+  color: hsl(223, 87%, 63%);
+}
+
+a:hover {
+  color: hsl(354, 100%, 66%);
+  text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  main {
+    width: 50%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  form {
+    flex-direction: row;
+    align-items: start;
+  }
+  input {
+    width: 25rem;
+  }
+  button {
+    width: 30%;
+  }
+  .error {
+    margin-left: 2rem;
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
